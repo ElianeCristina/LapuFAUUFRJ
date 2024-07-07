@@ -1,0 +1,512 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+}
+
+        /*CABEÇALHO*/
+header{
+    align-items: center;
+    justify-content: baseline;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.h__cabecalho{
+    font-size: 1.5rem;
+    color: #003366;
+    font-weight: 700;
+}
+
+.p__cabecalho{
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+/*MENU HAMBURGER*/
+.menu__mobile {
+    display: block;
+    position: absolute;
+    list-style: none;
+    width: 95%;
+    height: 0px;
+    top: 4.3rem;
+    right: 1px;
+    background: rgba(255, 255, 255, 0.815);
+    z-index: 1000;
+    transition: 0.3s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+.menu__mobile__link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#00336696;
+}
+
+#nav.active #menu__mobile{
+    height: calc(100vh - 4.3rem);
+    visibility: visible;
+    overflow-y: auto;
+    
+}
+
+#menu__mobile,
+a{
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+.btn__mobile{
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+#hamburger{
+
+    width: 20px;
+    border-top: 2px solid #003366;
+}
+
+#hamburger::after,
+#hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #003366;
+    margin-top: 0.3rem;
+    transition: 0.3s;
+    position: relative;
+}
+
+#nav.active #hamburger{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+    background-color: #003366;
+}
+
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+    background-color: #003366;
+    
+}
+
+
+        /*MENU*/
+
+.menu{
+    display: none;
+}
+
+        /*INÍCIO*/
+.home{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo__home{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.titulo__home__hh{
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.principal{
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+        /*TITULOS*/
+.titulo{
+    text-align: center;
+    padding: 1rem;
+}
+
+.titulo__lista{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.titulo__atlas{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.titulo__lista__mobile{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+    /*INTEGRANTES*/
+.integrantes{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lista__integrantes{
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+.lista__integrantes li{
+    font-size: 0.8rem;
+}
+
+        /*PROJETOS*/
+.projetos{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.lista__projetos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lista__projetos li{
+    padding: 1rem;
+}
+
+.img__icon{
+    width: 0.8rem;
+}
+
+.sem-link{
+    color: rgb(104, 103, 103);
+}
+
+        /*ATLAS*/
+.atlas__industrias{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.dados__lista{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.dados__texto{
+    text-align: justify;
+}
+
+.atlas__links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.atlas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6rem;
+}
+
+    /*CARROSSEL*/
+section.slider{
+    display: none;
+}
+
+/*MAPAS MOBILE*/
+
+section.mapas__mobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    
+}
+
+.img__mobile,
+.img__mob{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.i_mob{
+    width:190px;
+}
+
+.mob__i{
+    margin-left: 1.5rem;
+    margin-right: -1.5rem;
+}
+
+
+/*INFORMAÇÕES TÉCNICAS*/
+.atlas__info-tecnicas,
+.topo,
+.dados{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lista__integrantes__atlas{
+    display: none;
+}
+
+.lista__integrantes__mobile{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+
+.aviso{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;   
+}
+
+
+        /*COLABORE*/
+section.colabore{
+    display: none;
+}
+.colabore__mobile{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.kobo__mobile{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.geral,
+.ativas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+    align-items: center;
+    text-align: justify;
+}
+
+.kobo__mob{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.inativas,
+.reconvertidas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.img__geral,
+.img__ativas,
+.img__kobo,
+.img__inat{
+    width: 100px;
+    height: auto;
+}
+
+.warning__kobo{
+    width: 80%;
+    margin: 1rem 1rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.3rem;
+}
+
+
+    /*CONTATO*/
+.formulario{
+    padding: 1.5rem;
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+form input,
+form textarea{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.075);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+form input::placeholder{
+    color: rgba(128, 128, 128, 0.726);
+ }
+
+.mensagem{
+    resize: none;
+    height: 15rem;
+}
+
+form .btn-enviar{
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit]{
+    width: 5rem;
+    background-color: #003366;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .btn-enviar input:hover{
+    background-color: white;
+    border: solid 2px #003366;
+    color: #003366;
+    transform: scale(1);
+}
+
+        /*RODAPÉ*/
+.rodape{
+    display: none;
+}
+
+.rodape__mobile{
+    border-top: 1px solid #00336698;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.7rem;
+}
+.rodape__titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+.rodape__txt-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rodape__txt-mobile p{
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.dev{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 1024px)" href="../style/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="../style/mobile.css">
+    <script src="../scriptJs/script.js" defer></script>
+    <title>LAPU - Colabore</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1 class="h__cabecalho">
+                LAPU/PROURB/FAU/UFRJ
+            </h1>
+            <p class="p__cabecalho">
+                Laboratório Projetos Urbanos  - Programa de Pós-Graduação em Urbanismo -</p>
+            <p class="p__cabecalho">
+                Universidade Federal do Rio de Janeiro
+            </p>
+        </div>
+                <!--MENU MOBILE-->
+                <div class="header__mobile" id="header">
+                    <nav id="nav" >
+                        <button aria-label="Abrir Menu" class="btn__mobile" id="btn-mobile" aria-haspopup="true" aria-controls="menu__mobile" aria-expanded="false">
+                            <span id="hamburger"></span>
+                        </button>
+                        <ul class="menu__mobile" id="menu__mobile" role="menu">
+                            <li class="menu__mobile__lista"><a class="menu__mobile__link" href="../../index.html">Início</a></li>
+                            <li class="menu__mobile__lista"><a class="menu__mobile__link" href="./integrantes.html">Integrantes</a></li>
+                            <li class="menu__mobile__lista"><a class="menu__mobile__link" href="./projetos.html">Projetos</a></li>
+                            <li class="menu__mobile__lista"><a class="menu__mobile__link" href="./contato.html">Contato</a></li>
+                        </ul> 
+                    </nav>
+                </div>
+                <!--MENU-->
+        <nav>
+            <div class="menu">
+                <a href="../../index.html" target="_blank">Início</a>
+                <a href="./integrantes.html" target="_blank">Integrantes</a>
+                <a href="./projetos.html" target="_blank">Projetos</a>
+                <a href="./contato.html" target="_blank">Contato</a>
+            </div>
+        </nav>
+    </header>
+    <main class="atlas__industrias">
+        <section class="atlas__links">
+            <div class="titulo">
+                <h2>Atlas das Indústrias do Subúrbio Ferroviário da Zona Norte do Rio de Janeiro</h2>
+            </div>
+            <div class="storymaps">
+                <h3 class="titulo__lista">Conheça o projeto</h3>
+                <p class="dados__lista">
+                    Clique para ver página do projeto:
+                        <a href="https://storymaps.arcgis.com/stories/bd7ea50088574fcabfe60fbdd2a48b19" target="_blank">
+                            <img src="../img/icons8-nova-aba-50.png" class="img__icon" alt="imagem para uma nova aba">
+                        </a>
+                </p>
+            </div>
+            <div class="colaborar">
+                <h3 class="lista__titulo">Como colaborar</h3>
+                <p class="dados__lista">
+                    Preencha informações nos formulários. 
+                    <a href="./colabore.html" target="_blank">
+                        <img src="../img/icons8-nova-aba-50.png" class="img__icon" alt="imagem para uma nova aba"></a>
+                </p>
+            </div>            
+        </section>
+        <section class="atlas">
+                <h2 class="titulo__atlas">Atlas das indústrias</h2>
+                <p class="dados__lista  dados__texto">O presente atlas faz parte do projeto de extensão “Redesenvolvimento e valorização cultural da Zona Norte 
+                    através do projeto urbano: uma ação conjunta com agentes locais”, coordenado pela Profa. 
+                    Dra. Paula Albernaz (LAPU-PROURB-FAU-UFRJ), em parceria com o Instituto Virtual para o Desenvolvimento 
+                    Sustentável – (IVIDES.org®) e o Laboratório de Cartografia (GeoCart-UFRJ).</p>
+        </section>
+
+            <!--CARROSSEL-->
+        <section class="slider">
+            <div class="slider-content">
+                <!--Contadores-->
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                    <!--Imagens-->
+                <div class="slide-box primeiro">
+                    <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=a3a0faafbb224c69a3d66372fd207968&extent=-43.386,-22.9005,-43.2064,-22.8227&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                        <img src="../img/MapaGeral.png" alt="Mapa das Industrias do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=46d56d782c2d4804bb0952e5f49d54e4&extent=-43.495,-22.9388,-43.1359,-22.7831&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                        <img src="../img/MapaAtivas.png" alt="Mapa das Industrias ativas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=1023bbac4740487ca124d3396c678e4d&extent=-43.3999,-22.9093,-43.2203,-22.8315&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                        <img src="../img/MapaInativas.png" alt="Mapa das Industrias inativas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=12ca903286e64da0b78f490acaf6543a&extent=-43.38,-22.9048,-43.2004,-22.827&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                        <img src="../img/MapaReconvertidas.png" alt="Mapa das Industrias reconvertidas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                    </a>
+                </div>
+
+                    <!--Navegação Automáticas-->
+                <div class="nav-auto">
+                    <div class="auto-btn1 auto-bol"></div>
+                    <div class="auto-btn2 auto-bol"></div>
+                    <div class="auto-btn3 auto-bol"></div>
+                    <div class="auto-btn4 auto-bol"></div>
+                </div>
+
+                    <!--Navegação Manual-->
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        <section class="mapas__mobile">
+            <div class="img__mobile">
+                <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=a3a0faafbb224c69a3d66372fd207968&extent=-43.386,-22.9005,-43.2064,-22.8227&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                    <img src="../img/MapaGeral.png" class="i_mob mob__i" alt="Mapa das Industrias do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                </a>
+                <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=46d56d782c2d4804bb0952e5f49d54e4&extent=-43.495,-22.9388,-43.1359,-22.7831&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                    <img src="../img/MapaAtivas.png" class="i_mob" alt="Mapa das Industrias ativas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                </a>
+            </div>
+            <div class="img__mob">
+                <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=1023bbac4740487ca124d3396c678e4d&extent=-43.3999,-22.9093,-43.2203,-22.8315&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                    <img src="../img/MapaInativas.png" class="i_mob mob__i" alt="Mapa das Industrias inativas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                </a>
+                <a href="https://ufrj-academico.maps.arcgis.com/apps/Embed/index.html?webmap=12ca903286e64da0b78f490acaf6543a&extent=-43.38,-22.9048,-43.2004,-22.827&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light" target="_blank">
+                    <img src="../img/MapaReconvertidas.png" class="i_mob" alt="Mapa das Industrias reconvertidas do Subúrbio ferroviário da zona norte do Rio de Janeiro">
+                </a>
+            </div>
+
+        </section>
+        <section class="atlas__info-tecnicas">
+            <h2 class="titulo info__tecnicas_titulo">Informações técnicas</h2>
+            <div class="dados">
+                <ul>
+                    <h3 class="lista__titulo">Dicionário de dados</h3>
+                    <li class="dados__lista">Dicionário de Dados
+                        <a href="https://drive.google.com/file/d/18_WVyTXL2Wb1OvK9EItAl5iSedJgeWg4/view" target="_blank">
+                            <img src="../img/icons8-pdf-48.png" class="img__icon" alt="símbolo do pdf">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3 class="lista__titulo">Metadados</h3>
+                    <li class="dados__lista">Metadados
+                        <a href="https://drive.google.com/file/d/18_WVyTXL2Wb1OvK9EItAl5iSedJgeWg4/view" target="_blank">
+                            <img src="../img/icons8-pdf-48.png" class="img__icon" alt="símbolo do pdf">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3 class="lista__titulo">Links para download dos conjuntos de dados (Datasets)</h3>
+                    <li class="dados__lista">Shapefile
+                        <a href="https://drive.google.com/file/d/18_WVyTXL2Wb1OvK9EItAl5iSedJgeWg4/view" target="_blank">
+                            <img src="../img/icons8-nova-aba-50.png" class="img__icon" alt="símbolo para uma nova aba">
+                        </a>
+                    </li>
+                    <li class="dados__lista">GeoJSON
+                        <a href="https://drive.google.com/drive/folders/1HySXZUcGxkcu-Nl3iaRFujTAS3bVdgIf" target="_blank">
+                            <img src="../img/icons8-nova-aba-50.png" class="img__icon" alt="símbolo para uma nova aba">
+                        </a>
+                    </li>
+            </div>
+            <div class="solucao__adotada">
+
+                <h3 class="lista__titulo">Solução adotada</h3>
+                <p class="dados__lista dados__texto">O Instituto IVIDES.org®, na pessoa da Dra. Raquel Dezidério Souto, é responsável pelo desenvolvimento 
+                técnico geral do mapeamento colaborativo digital. Para atender a este objetivo, foi projetada e desenvolvida 
+                uma solução híbrida (mistura de softwares livres e proprietários), que está sendo utilizada pela equipe 
+                executiva:</p>
+                <ul>
+                    <li class="dados__lista  dados__texto">O sistema de informação geográfica QGIS®, no pré-processamento e no geoprocessamento dos dados;</li>
+                    <li class="dados__lista  dados__texto">O Enketo KoboToolbox®, na criação dos formulários de coleta dos dados colaborativos e sua 
+                        administração;</li>
+                    <li class="dados__lista  dados__texto">O storyteller Esri StoryMaps®, na criação do mapa da história (storytelling map), que conta sobre 
+                        o desenvolvimento do projeto do Atlas; e</li>
+                    <li class="dados__lista  dados__texto">O Esri ArcGIS Online®, na elaboração dos mapas on-line interativos (web maps).</li>
+                </ul>
+            </div>
+            <div class="lista__integrantes__atlas">
+                <h2>Equipe técnica do atlas</h2>
+                <ul>
+                    <h3 class="titulo__lista">Coordenação Geral da Pesquisa</h3>
+                    <li class="dados__lista">Profa. Dra. Maria Paula Albernaz – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Coordenação do Mapeamento Colaborativo Digital</h3>
+                    <li class="dados__lista">Dra. Raquel Dezidério Souto – IVIDES.org e GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Coordenação da Plataforma Digital no Arcgis On-line</h3>
+                    <li class="dados__lista">Ddo. Francisco Carlos Moreira Gomes – GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Professores Colaboradores</h3>
+                    <li class="dados__lista">Prof. Dr. Manoel Do Couto Fernandes – GeoCart-PPGG-IGEO-UFRJ</li>
+                    <li class="dados__lista">Prof. Dr. Paulo Márcio Leal Menezes – GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Pesquisadores Colaboradores (Ativos)</h3>
+                    <li class="dados__lista">Carolina Contarato – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista">Maria Castilho Pettersen – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista">Marina Guerra Diogenes – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista">Marina Louzada Alves – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Tratamento e Organização dos Dados (Ativos)</h3>
+                    <li class="dados__lista">Amanda Lacerda Reis – Geografia-IGEO-UFRJ (bolsista PROFAEX)</li>
+                    <li class="dados__lista">Eduardo Magalhães – FAU-UFRJ (bolsista PIBIC-UFRJ)</li>
+                    <li class="dados__lista">Gabriele de Oliveira Pinto – FAU-UFRJ (bolsista FAPERJ)</li>
+                    <li class="dados__lista">Leonardo Nascimento da Cruz – Geografia-IGEO – UFRJ (bolsista PIBIAC)</li>
+                    <li class="dados__lista">Luis Victor Jesus Antunes -FAU-UFRJ (bolsista PIBIC-CNPq)</li>
+                    <li class="dados__lista">Victor Ferreira Santos – FAU-UFRJ (extensionista)</li>
+                    <li class="dados__lista">Vinícius Lopes Modena – FAU-UFRJ (bolsista PIBIAC)</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Pesquisadores Colaboradores (Inativos)</h3>
+                    <li class="dados__lista">Daniel Lenz Costa Lima – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista">Hyago Ataíde de Paula Maia – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista">Tratamento e Organização dos Dados (Inativos)</h3>
+                    <li class="dados__lista">Ana Luisa Lima Silvestre da Silva – Geografia-IGEO-UFRJ (ex-bolsista PIBIAC)</li>
+                    <li class="dados__lista">Isabela Lomba de Pinho – FAU-UFRJ (ex-bolsista PIBIC-CNPq)</li>
+                    <li class="dados__lista">Isabelle da Silva Gomes – FAU-UFRJ (ex-bolsista PROFAEX)</li>
+                </ul>
+
+            </div>
+
+            <!--Lista de Integrante Mobile-->
+            <div class="lista__integrantes__mobile">
+                <h2 class="titulo__lista">Equipe técnica do atlas</h2>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Coordenação Geral da Pesquisa</h3>
+                    <li class="dados__lista__mobile">Profa. Dra. Maria Paula Albernaz – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Coordenação do Mapeamento Colaborativo Digital</h3>
+                    <li class="dados__lista__mobile">Dra. Raquel Dezidério Souto – IVIDES.org e GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Coordenação da Plataforma Digital no Arcgis On-line</h3>
+                    <li class="dados__lista__mobile">Ddo. Francisco Carlos Moreira Gomes – GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Professores Colaboradores</h3>
+                    <li class="dados__lista__mobile">Prof. Dr. Manoel Do Couto Fernandes – GeoCart-PPGG-IGEO-UFRJ</li>
+                    <li class="dados__lista__mobile">Prof. Dr. Paulo Márcio Leal Menezes – GeoCart-PPGG-IGEO-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Pesquisadores Colaboradores (Ativos)</h3>
+                    <li class="dados__lista__mobile">Carolina Contarato – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista__mobile">Maria Castilho Pettersen – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista__mobile">Marina Guerra Diogenes – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista__mobile">Marina Louzada Alves – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Tratamento e Organização dos Dados (Ativos)</h3>
+                    <li class="dados__lista__mobile">Amanda Lacerda Reis – Geografia-IGEO-UFRJ (bolsista PROFAEX)</li>
+                    <li class="dados__lista__mobile">Eduardo Magalhães – FAU-UFRJ (bolsista PIBIC-UFRJ)</li>
+                    <li class="dados__lista__mobile">Gabriele de Oliveira Pinto – FAU-UFRJ (bolsista FAPERJ)</li>
+                    <li class="dados__lista__mobile">Leonardo Nascimento da Cruz – Geografia-IGEO – UFRJ (bolsista PIBIAC)</li>
+                    <li class="dados__lista__mobile">Luis Victor Jesus Antunes -FAU-UFRJ (bolsista PIBIC-CNPq)</li>
+                    <li class="dados__lista__mobile">Victor Ferreira Santos – FAU-UFRJ (extensionista)</li>
+                    <li class="dados__lista__mobile">Vinícius Lopes Modena – FAU-UFRJ (bolsista PIBIAC)</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Pesquisadores Colaboradores (Inativos)</h3>
+                    <li class="dados__lista__mobile">Daniel Lenz Costa Lima – LAPU-PROURB-FAU-UFRJ</li>
+                    <li class="dados__lista__mobile">Hyago Ataíde de Paula Maia – LAPU-PROURB-FAU-UFRJ</li>
+                </ul>
+                <ul>
+                    <h3 class="titulo__lista__mobile">Tratamento e Organização dos Dados (Inativos)</h3>
+                    <li class="dados__lista__mobile">Ana Luisa Lima Silvestre da Silva – Geografia-IGEO-UFRJ (ex-bolsista PIBIAC)</li>
+                    <li class="dados__lista__mobile">Isabela Lomba de Pinho – FAU-UFRJ (ex-bolsista PIBIC-CNPq)</li>
+                    <li class="dados__lista__mobile">Isabelle da Silva Gomes – FAU-UFRJ (ex-bolsista PROFAEX)</li>
+                </ul>
+
+            </div>
+
+            <div class="licenca__dados">
+                <ul>
+                    <h3 class="titulo__lista">Licença dos dados</h3>
+                    <li class="dados__lista">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (PT-Br)</li>
+                    <li class="dados__lista">Creative Commons Attribution-ShareAlike 4.0 International (EN)</li>
+                </ul>
+            </div>
+            <div class="aviso">
+                <h4>Aviso legal</h4>
+
+                <p class="aviso__p">As imagens aqui reproduzidas são creditadas à 
+                    <a href="https://trust.arcgis.com/pt-br/privacy/privacy-tab-intro.htm" target="_blank">Esri ArcGIS Online</a>.            
+            </div>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="rodape__titulo">
+                <h6>Laboratório Projetos Urbanos - Programa de Pós-Graduação em Urbanismo - Universidade Federal do Rio de Janeiro</h6>
+            </div>
+            <div class="rodape__txt">
+                <p>LAPU 2023 &copy; |</p>
+                <a href="https://ivides.org/raquel-deziderio" target="_blank">webmaster: Raquel Dezidério Souto |</a>
+                <a href="https://portifolio-tau-inky-62.vercel.app/" target="_blank">webdesign: Eliane Cristina N. Correia</a>
+            </div>
+            <p class="p__footer">Ícones fornecidos por <a href="https://icons8.com.br/icons">icons8</a></p>
+        </div>
+                        <!--RODAPE MOBILE-->
+        <div class="rodape__mobile">
+            <div class="rodape__titulo">
+                <h6>Laboratório Projetos Urbanos - Programa de Pós-Graduação em Urbanismo - Universidade Federal do Rio de Janeiro</h6>
+            </div>
+                <div class="rodape__txt-mobile">
+                    <p>LAPU 2023 &copy;</p>
+                    <div class="dev">               
+                        <a href="https://ivides.org/raquel-deziderio" target="_blank">webmaster: Raquel Dezidério Souto</a>
+                        <a href="https://portifolio-tau-inky-62.vercel.app/" target="_blank">webdesign: Eliane Cristina N. Correia</a>
+                    </div>
+                    <p class="p__footer">Ícones fornecidos por <a href="https://icons8.com.br/icons">icons8</a></p>
+                </div>
+            </div>
+        
+    </footer>
+</body>
+</html>
